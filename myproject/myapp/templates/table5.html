@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table5 Visualization </title>
+</head>
+<body>
+  <h2> Answers</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>StudentID</th>
+        <th>Answer</th>
+        
+        
+      </tr>
+    </thead>
+    <tbody>
+      {% for table in table5 %}
+      <tr>
+        <td>{{ table5.StudentID }}</td>
+        <td>{{ table5.Answer }}</td>
+        
+       
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table3 Visualization </title>
+</head>
+<body>
+  <h2> Assesment Area</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>StudentID</th>
+        <th>Firstname</th>
+        <th>Lasttname</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      {% for table in table3 %}
+      <tr>
+        <td>{{ table3.StudentID }}</td>
+        <td>{{ table3.Firstname }}</td>
+        <td>{{ table3.Lastname }}</td>
+       
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>

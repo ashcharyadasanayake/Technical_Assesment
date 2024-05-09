@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table6 Visualization </title>
+</head>
+<body>
+  <h2> Student</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Subject</th>
+        <th>Subject Score</th>
+        
+        
+      </tr>
+    </thead>
+    <tbody>
+      {% for table in table6 %}
+      <tr>
+        <td>{{ table6.StudentID }}</td>
+        <td>{{ table6.Studentscore }}</td>
+        
+       
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>
